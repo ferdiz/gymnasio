@@ -1,3 +1,6 @@
+body{
+    background-color: darkseagreen
+}
 #navegador{
     margin-top: 8px;
 }
@@ -13,8 +16,8 @@
 }
 
 #mapa{
-    height: 400px;
-    border: 1px solid black;
+  /*   height: 400px; */
+
 }
 
 #grupos{
