@@ -21,6 +21,16 @@ body{
    padding-right: 63px;
 }
 
+#login{
+    width: 7%;
+    -webkit-transition: width 0.2s;
+    transition: width 0.2s;
+}
+
+#login:hover{
+    width: 27%;
+
+}
 
 #mapa{
   /*   height: 400px; */
@@ -28,10 +38,7 @@ body{
 }
 
 #grupos{
-    height: 400px;
-
-
-    
+    height: 400px;    
 }
 
 #mapaGrupo{
