@@ -1,14 +1,15 @@
-#navegadorBuscador{
-    margin: 2% 0%;
-    padding-bottom: 5%;
-}
 #navegador{
-
-    padding-bottom: 5%;
+    margin-top: 8px;
 }
+
 #buscador{
-    border: 1px solid black;
-    padding-bottom: 5%;
+    /* text-align: right; */
+
+}
+
+#logueo{
+    text-align: right;
+
 }
 
 #mapa{
