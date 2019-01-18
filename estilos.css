@@ -11,12 +11,14 @@ body{
 }
 
 #buscador{
-    /* text-align: right; */
+/*     margin-left: 3px;  */
+
 
 }
 
 #logueo{
-    margin-left: 87.1%;
+   text-align: right;
+   padding-right: 63px;
 }
 
 
