@@ -37,16 +37,16 @@ body :-ms-input-placeholder {
   font-weight: 300;
 }
 .wrapper {
-  background: #50a3a2;
-  background: linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
-  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  background: #505fa3;
+/*   background: linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%); */
   position: absolute;
   top: 50%;
   left: 0;
   width: 100%;
   height: 400px;
   margin-top: -200px;
-  overflow: hidden;
+ /*  overflow: hidden; */
 }
 .wrapper.form-success .container h1 {
           transform: translateY(85px);
@@ -95,7 +95,8 @@ form input:focus {
   color: #53e3a6;
 }
 form button {
-          appearance: none;
+  display: block;
+  appearance: none;
   outline: 0;
   background-color: white;
   border: 0;
@@ -106,6 +107,7 @@ form button {
   cursor: pointer;
   font-size: 18px;
   transition-duration: 0.25s;
+  margin: 10px auto;
 
 }
 form button:hover {
