@@ -25,12 +25,26 @@ body{
     width: 7%;
     -webkit-transition: width 0.2s;
     transition: width 0.2s;
+    position: relative;
 }
 
 #login:hover{
-    width: 27%;
+    
 
 }
+
+#icono{
+    position: absolute;
+    -webkit-transition: width 0.2s;
+    transition: width 0.2s;
+    width: 1%;
+}
+
+#icono:hover{
+    width: 27%;
+}
+
+
 
 #mapa{
   /*   height: 400px; */
