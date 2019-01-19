@@ -22,17 +22,11 @@ app.get('/login',function(req,res){
  app.post('/login',function(req,res){
 
     persona={
-      nombre:res.nombre,
-      pass:res.pass
+      nombre:req.body.nombre,
+      pass:req.body.pass
     }
       baseDatos.findUsuario(persona).then(function(data){
-         if(data.activo){
-            res.send(data.activo)
-         }else{
-            res.redirect('/registrarse.html')
-         }
-            
-      })
+         res.send(data != null)
  })
  app.get('/registrarse',function(){
     res.sendfile('registrarse.html')
