@@ -11,18 +11,18 @@ body{
 }
 
 #buscador{
-/*     margin-left: 3px;  */
+text-align: right;
 
 
 }
 
 #logueo{
    text-align: right;
-   padding-right: 63px;
+   padding-left: 3px;
 }
 
 #login{
-    width: 7%;
+    /* width: 7%; */
     -webkit-transition: width 0.2s;
     transition: width 0.2s;
     position: relative;
