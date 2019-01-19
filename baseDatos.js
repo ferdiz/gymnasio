@@ -10,6 +10,7 @@ const usuario = new mongoose.Schema({
     nombre: String,
     password: String,
     activo: Boolean
+
 })
 
 const Usuario = mongoose.model('Usuario', usuario)
