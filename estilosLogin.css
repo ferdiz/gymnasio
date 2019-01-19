@@ -37,7 +37,7 @@ body :-ms-input-placeholder {
   font-weight: 300;
 }
 .wrapper {
-  background: #505fa3;
+  background: rgb(85, 187, 145);
 /*   background: linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
   background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%); */
   position: absolute;
