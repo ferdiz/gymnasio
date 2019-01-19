@@ -50,7 +50,7 @@ app.get('/login',function(req,res){
          res.send('El usuario se registro con exito')  
       } 
       
-      
+   } ) 
 })
 
 
