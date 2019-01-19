@@ -6,7 +6,8 @@ db.once('open', () => {
     console.log("base gymnasio conectada")
 })
 const persona = new mongoose.Schema({
-    nombre: String
+    nombre: String,
+    pass:String
 })
 
 const Persona = mongoose.model('Persona', persona)
@@ -15,4 +16,4 @@ function listarPersonas() {
     return Persona.find().exec()
 }
 
-exports.listarPersonas = listarPersonas
+exports.listarPersonas = listarPersona
