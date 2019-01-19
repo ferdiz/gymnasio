@@ -1,1 +1,1 @@
-npm install mongodb
+npm install mongodb express body-parser

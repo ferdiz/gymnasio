@@ -1,13 +1,17 @@
 const mongoose = require('mongoose')
 const baseDatos = require('./baseDatos')
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
 
+app.use(bodyParser.urlencoded({ extended: true })); 
+app.use(express.static(__dirname + '/'));
+
 app.get('/', function(req, res){
-   res.send("Hello world!");
+   res.sendfile('indexGim.html')
 });
 
-app.get('/listarPersonas', function(req, res){
+app.post('/listarPersonas', function(req, res){
     baseDatos.listarPersonas().then(function(data){
        res.send(data)
     });
