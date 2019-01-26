@@ -88,25 +88,34 @@
             <a href="paginaRetos.html" id="retos" role="button" class="btn btn-secondary">Retos</a>
         </div>
     </div>
-
+  
+    <div id="variablePadre"></div>
 
 
 <script>
   $(document).ready(function(){
+      
       $('#logueo').click(function(){
-        $.ajax({
-            type:'GET',
-            url:'/login',
-           
-            success:data=>{
-                
-                let html="<iframe src='login.html' width='600'  height='400'  frameborder='0' style='border:0' allowfullscreen></iframe>"
+        $('#iframe').empty();
+        let html="<iframe src='login.html' width='600'  height='400'  frameborder='0' style='border:0' allowfullscreen></iframe>"
                 $('#iframe').append(html)
                 $('#logueo').off('click')
-            }
+               
         })
+        $('#variablePadre').click(function(){
+            $('#iframe').empty();
+            let html="<iframe src='mapa.html' width='600'  height='400'  frameborder='0' style='border:0' allowfullscreen></iframe>"
+                $('#iframe').append(html)
+                $('#logueo').off('click')
       })
-  })
+
+      
+         
+     
+            
+
+  
+})
 </script>
 </body>
 
