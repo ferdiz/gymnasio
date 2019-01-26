@@ -22,7 +22,7 @@ function findUsuarios() {
 function findUsuario(usuario) {
     return Usuario.findOne({ 
         nombre: new RegExp(usuario.nombre, 'i'),
-        password: usuario.pass
+        password: usuario.password
     })
 }
 
