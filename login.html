@@ -14,31 +14,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD
-        <p id="log"></p>
-        <p id="log"></p>
-    <div class="wrapper">
-           
-        <div class="container">
-                <p id="log"></p>
-                <p id="logr"></p>
-            <h1>Bienvenidos</h1>
-            
-            <form class="form">
-                <button  id="login-button">Iniciar Sesion </button>
-                <input type="text" placeholder="Nombre de Usuario" id="nombre">
-                <input type="password" placeholder="Contrseña" id="pass">
-                <button  id="registrarse-button">Registrarse</button>
-                <input type="text" placeholder="Nombre" id="nombreR">
-                <input type="password" placeholder="Contrseña" id="passR">
-                <input type="apellido" placeholder="Apellido" id="">
-                <input type="email" placeholder="Correo electronico">
-                <input type="direccion" placeholder="Direccion">
-                <input type="provincia" placeholder="Provincia">
-                <input type="grupo" placeholder="Grupo">
-
-                </form>
-=======
     <form class="form">
         <div class="accordion" id="accordionExample">
 
@@ -81,70 +56,10 @@
                     <input type="text" placeholder="Localidad" id="nombre">
                     <input type="text" placeholder="Nombre del Grupo" id="nombre">
                 </div>
->>>>>>> 416a980a49c365a1d393463f9697263413a6b9f0
             </div>
             </div>
 
         </div>
-<<<<<<< HEAD
-        <ul class="bg-bubbles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
-
-      <script src="funcionesLogin.js"></script>
-      <script>
-      
-      $(document).ready(function(){
-
-        $('#login-button').click(function(){
-        
-            persona={
-                nombre: $('#nombre').val(),
-                pass:$('#pass').val()
-            }
-            $.ajax({
-            type:'POST',
-            url:'/login',
-            data:persona,
-            success:data=>{
-                var html='Bienvenido'+data.nombre;
-                $('#log').append(html)
-               
-                
-            }
-        })
-        })
-        $('#registrarse-button').click(function(){
-        
-        persona={
-            nombre: $('#nombreR').val(),
-            pass:$('#passR').val()
-        }
-        $.ajax({
-        type:'POST',
-        url:'/registrarse',
-        data:persona,
-        success:data=>{
-            
-            $('#logr').append( data)
-        }
-    })
-    })
-   
-      })
-      
-      </script>
-=======
     </form>
 
 
@@ -192,7 +107,6 @@
         })
 
     </script>
->>>>>>> 416a980a49c365a1d393463f9697263413a6b9f0
 </body>
 
 </html>
