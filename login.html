@@ -14,17 +14,23 @@
 </head>
 
 <body>
+        <p id="log"></p>
+        <p id="log"></p>
     <div class="wrapper">
+           
         <div class="container">
+                <p id="log"></p>
+                <p id="logr"></p>
             <h1>Bienvenidos</h1>
-            <p id="log"></p>
+            
             <form class="form">
-                <button type="submit" id="login-button">Iniciar Sesion </button>
+                <button  id="login-button">Iniciar Sesion </button>
                 <input type="text" placeholder="Nombre de Usuario" id="nombre">
                 <input type="password" placeholder="Contrseña" id="pass">
-                <button type="submit" id="registrarse-button">Registrarse</button>
-                <input type="text" placeholder="Nombre">
-                <input type="apellido" placeholder="Apellido">
+                <button  id="registrarse-button">Registrarse</button>
+                <input type="text" placeholder="Nombre" id="nombreR">
+                <input type="password" placeholder="Contrseña" id="passR">
+                <input type="apellido" placeholder="Apellido" id="">
                 <input type="email" placeholder="Correo electronico">
                 <input type="direccion" placeholder="Direccion">
                 <input type="provincia" placeholder="Provincia">
@@ -55,30 +61,34 @@
         $('#login-button').click(function(){
         
             persona={
-                nombre: $('#nombre').val,
-                pass:$('#pass').val
+                nombre: $('#nombre').val(),
+                pass:$('#pass').val()
             }
             $.ajax({
             type:'POST',
             url:'/login',
             data:persona,
             success:data=>{
-                $('#log').append(data)
+                var html='Bienvenido'+data.nombre;
+                $('#log').append(html)
+               
+                
             }
         })
         })
         $('#registrarse-button').click(function(){
         
         persona={
-            nombre: $('#nombre').val,
-            pass:$('#pass').val
+            nombre: $('#nombreR').val(),
+            pass:$('#passR').val()
         }
         $.ajax({
         type:'POST',
         url:'/registrarse',
         data:persona,
         success:data=>{
-            $('#log').append(data)
+            
+            $('#logr').append( data)
         }
     })
     })

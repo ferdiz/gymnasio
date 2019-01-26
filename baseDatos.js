@@ -22,12 +22,12 @@ function findUsuarios() {
 function findUsuario(usuario) {
     return Usuario.findOne({ 
         nombre: new RegExp(usuario.nombre, 'i'),
-        password: usuario.password
+        password: usuario.pass
     })
 }
 
 function addUsuario(usuarioDto) {
-    let usuario = new Usuario( {nombre : usuarioDto.nombre, password: usuarioDto.password, activo: false})
+    let usuario = new Usuario( {nombre : usuarioDto.nombre, password: usuarioDto.pass, activo: false})
     return usuario.save()
 }
 
