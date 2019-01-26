@@ -37,10 +37,10 @@ app.post('/registrarse', function (req, res) {
    }
    baseDatos.findUsuario(persona).then(function (data) {
       if (data != null) {
-         res.send('Existe un usuario con el mismo nombre. Ingrese otro')
+         res.send(data)
       } else {
          baseDatos.addUsuario(persona);
-         res.send('El usuario se registro con exito')
+         res.send(data)
       }
 
    })
