@@ -26,7 +26,7 @@ app.post('/login', function (req, res) {
       pass: req.body.pass
    }
    baseDatos.findUsuario(persona).then(function (data) {
-      res.send(data != null)
+      res.send(data)
    })
 })
 app.get('/registrarse', function () {
