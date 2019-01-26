@@ -63,7 +63,7 @@
             <div class="col-lg-1">
         <!-- GRUPOS -->
             </div>
-            <div class="col-lg-3" id="grupos" id="grupos" >
+            <div class="col-lg-3" id="grupos" >
                 <h3 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:grey;" >Grupos</h3>
                 <button type="button" class="btn btn-outline-success">Aerobico</button>
                 <button type="button" class="btn btn-outline-success">Caminata</button>
@@ -81,7 +81,7 @@
             <hr>
         
         <!-- NAV DE ABAJO -->
-        <div class="btn-group col-lg-12" role="group" aria-label="Basic example">
+        <div id="navAbajo" class="btn-group col-lg-12" role="group" aria-label="Basic example">
             <a href="paginaInicio.html" id="inicio" role="button" class="btn btn-secondary">Inicio</a>
             <a href="paginaAmigos.html" id="amigos" role="button" class="btn btn-secondary">Amigos</a>
             <a href="paginaHistorial.html" id="historial" role="button" class="btn btn-secondary">Historial</a>
@@ -100,7 +100,7 @@
            
             success:data=>{
                 
-                let html="<iframe src='login.html' width='600'  height='400'  frameborder='0' style='border:0' allowfullscreen></iframe>"
+                let html="<iframe src='login.html' width='600'  height='100%'  frameborder='0' style='border:0' allowfullscreen></iframe>"
                 $('#iframe').append(html)
                 $('#logueo').off('click')
             }
