@@ -52,6 +52,7 @@ text-align: right;
 }
 
 #grupos{
+    overflow: auto;
     height: 400px;    
 }
 
@@ -67,4 +68,8 @@ text-align: right;
 #grupos>button{
     width: 100%;
     margin: 5px;
+}
+
+#navAbajo{
+
 }

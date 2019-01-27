@@ -34,10 +34,10 @@ app.post('/registrarse', function (req, res) {
    }
    baseDatos.findUsuario(persona).then(function (data) {
       if (data != null) {
-         res.send(data)
+         res.send({msn:'El usuario Existe'})
       } else {
          baseDatos.addUsuario(persona);
-         res.send(data)
+         res.send({msn:'fue registrado exitosamente'})
       }
 
    })

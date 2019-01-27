@@ -23,7 +23,7 @@ function findUsuario(usuario) {
 }
 
 function addUsuario(usuarioDto) {
-    let usuario = new Usuario( {nombre : usuarioDto.nombre, password: usuarioDto.password, activo: false})
+    let usuario = new Usuario( {nombre : usuarioDto.nombre, password: usuarioDto.pass, activo: false})
     return usuario.save()
 }
 
