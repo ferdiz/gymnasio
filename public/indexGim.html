@@ -96,18 +96,8 @@
   $(document).ready(function(){
       
       $('#logueo').click(function(){
-<<<<<<< HEAD
         $('#iframe').empty();
         let html="<iframe src='login.html' width='600'  height='400'  frameborder='0' style='border:0' allowfullscreen></iframe>"
-=======
-        $.ajax({
-            type:'GET',
-            url:'/login',
-           
-            success:data=>{
-                
-                let html="<iframe src='login.html' width='600'  height='100%'  frameborder='0' style='border:0' allowfullscreen></iframe>"
->>>>>>> 23ccce746f01b12cfef0f1172c1d1431ab90fc92
                 $('#iframe').append(html)
                 $('#logueo').off('click')
                
