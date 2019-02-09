@@ -5,10 +5,10 @@ const bodyParser = require('body-parser');
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(`${__dirname}/public`));
 
 app.get('/', function (req, res) {
-   res.sendfile('public/indexGim.html')
+   res.sendFile(`${__dirname}/public/indexGim.html`)
 });
 
 app.post('/listarPersonas', function (req, res) {
@@ -16,9 +16,6 @@ app.post('/listarPersonas', function (req, res) {
       res.send(data)
    });
 });
-app.get('/login', function (req, res) {
-   res.sendfile('public/login.html')
-})
 app.post('/login', function (req, res) {
 
    persona = {
